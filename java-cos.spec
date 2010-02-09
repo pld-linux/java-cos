@@ -18,13 +18,16 @@ Group:		Libraries/Java
 Source0:	http://servlets.com/cos/cos-26Dec2008.zip
 # Source0-md5:	d7e6ee62b8e92c9d7cb0bdf016e2a815
 URL:		http://servlets.com/cos
+BuildRequires:	java(JSP)
+BuildRequires:	java(Servlet)
 %{!?with_java_sun:BuildRequires:	java-gcj-compat-devel}
 %{?with_java_sun:BuildRequires:	java-sun}
 BuildRequires:	jpackage-utils
 BuildRequires:	rpm >= 4.4.9-56
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
-# for %{_javadir}
+Requires:	java(JSP)
+Requires:	java(Servlet)
 Requires:	jpackage-utils
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
