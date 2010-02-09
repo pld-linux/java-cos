@@ -30,17 +30,18 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The com.oreilly.servlet package is the "must have" class library for servlet
-developers. There are classes to help servlets parse parameters, handle file
-uploads, generate multipart responses (server push), negotiate locales for
-internationalization, return files, manage socket connections, and act as RMI
-servers, as well as a class to help applets communicate with servlets. Since
-the first edition, there are also new classes to help servlets send email
-messages, cache responses, and auto-detect servlet API support.
+The com.oreilly.servlet package is the "must have" class library for
+servlet developers. There are classes to help servlets parse
+parameters, handle file uploads, generate multipart responses (server
+push), negotiate locales for internationalization, return files,
+manage socket connections, and act as RMI servers, as well as a class
+to help applets communicate with servlets. Since the first edition,
+there are also new classes to help servlets send email messages, cache
+responses, and auto-detect servlet API support.
 
 %description -l pl.UTF-8
-Pakiet com.oreilly.servlet to biblioteka stanowiąca niezbędnik programisty
-servletów. W skład biblioteki wchodzą klasy
+Pakiet com.oreilly.servlet to biblioteka stanowiąca niezbędnik
+programisty servletów. W skład biblioteki wchodzą klasy
   - ułatwiające analizę parametrów servletu
   - obsługujące wysyłanie/pobieranie plików
   - generujące wieloczęściowe odpowiedzi (server push)
@@ -101,6 +102,7 @@ ln -nfs %{srcname}-%{version} %{_javadocdir}/%{srcname}
 
 %files
 %defattr(644,root,root,755)
+%doc license.txt readme.txt
 %{_javadir}/*.jar
 
 %files javadoc
