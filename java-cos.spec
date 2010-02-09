@@ -12,7 +12,7 @@ Summary:	"must have" class library for servlet developers
 Summary(pl.UTF-8):	Niezbędnik programisty servletów
 Name:		java-cos
 Version:	2008.12.26
-Release:	0.1
+Release:	1
 License:	Free for non-commercial use, "buy my book" for commercial
 Group:		Libraries/Java
 Source0:	http://servlets.com/cos/cos-26Dec2008.zip
