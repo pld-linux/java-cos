@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.java
 %define		srcname		cos
 Summary:	"must have" class library for servlet developers
 Summary(pl.UTF-8):	Niezbędnik programisty servletów
