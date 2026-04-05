@@ -1,9 +1,11 @@
+%{?use_default_jdk:%use_default_jdk 8}
+
 %define		srcname		cos
 Summary:	"must have" class library for servlet developers
 Summary(pl.UTF-8):	Niezbędnik programisty servletów
 Name:		java-cos
 Version:	2008.12.26
-Release:	1
+Release:	2
 License:	Free for non-commercial use, "buy my book" for commercial
 Group:		Libraries/Java
 Source0:	http://servlets.com/cos/cos-26Dec2008.zip
@@ -11,10 +13,10 @@ Source0:	http://servlets.com/cos/cos-26Dec2008.zip
 URL:		http://servlets.com/cos
 BuildRequires:	java(jsp)
 BuildRequires:	java(servlet)
-BuildRequires:	jdk
+%buildrequires_jdk
 BuildRequires:	jpackage-utils
 BuildRequires:	rpm-javaprov
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.556
 BuildRequires:	unzip
 Requires:	java(jsp)
 Requires:	java(servlet)
